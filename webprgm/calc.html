@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<script>
+function add()
+{
+    d=document.getElementById('f1').value;
+    d2=document.getElementById('f2').value;    
+    re=+d + +d2;
+    document.getElementById('r').value=re;
+}
+function multiply()
+{
+    d=document.getElementById('f1').value;
+    d2=document.getElementById('f2').value;    
+    re=d*d2;
+    document.getElementById('r').value=re;
+}
+function subtract()
+{
+    d=document.getElementById('f1').value;
+    d2=document.getElementById('f2').value;    
+    re=d-d2;
+    document.getElementById('r').value=re;
+}
+function division()
+{
+    d=document.getElementById('f1').value;
+    d2=document.getElementById('f2').value;    
+    re=d/d2;
+    document.getElementById('r').value=re;
+}
+
+</script>
+</head>
+<body>
+
+    <p>Enter the first Number: <input type="number" id="f1"></p>
+    <p>Enter the second Number: <input type="number" id="f2"></p>
+    <button onclick="add()">ADD</button>
+    <button onclick="subtract()">SUBTRACT</button>
+    <button onclick="multiply()">MULTIPLY</button>
+    <button onclick="division()">DIVISION</button><br><br>
+    RESULT: <input id="r"><br>
+    </body>
+    </html>
