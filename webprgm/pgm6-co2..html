@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>online quiz</title>
+        <script>
+            function quiz()
+            {
+                var score=0;
+                if(document.getElementById("1").checked)
+                {
+                    score ++;
+                }
+                if(document.getElementById("5").checked)
+                {
+                    score ++;
+                }
+                if(document.getElementById("9").checked)
+                {
+                    score ++;
+                }
+                if(document.getElementById("10").checked)
+                {
+                    score ++;
+                }
+                document.write("score is" +score);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+       <b>question 1: 2*5=</b> <br>
+       <input type="radio" name="1" id= "1" value="10">10<br>
+<input type="radio" name="1" id= "2" value="2">2 <br>
+<input type="radio" name="1"  id= "3" value="3">3<br>
+<b>question 2: 10*10=</b><br>
+<input type="radio" name="2" id= "4" value="10">10<br>
+<input type="radio" name="2" id= "5" value="100">100 <br>
+<input type="radio" name="2" id= "6" value="200">200<br>
+<b>question 3: 5*5=</b><br>
+<input type="radio" name="3" id= "7" value="50">50<br>
+<input type="radio" name="3" id= "8" value="20">20 <br>
+<input type="radio" name="3" id= "9" value="25">25<br>
+<b>question 4: 5*10=</b><br>
+<input type="radio" name="4" id= "10" value="50">50<br>
+<input type="radio" name="4" id= "11" value="75">75 <br>
+<input type="radio" name="4" id= "12" value="20">20<br>
+<button onclick="quiz()">submit</button>
+    </form>
+    </body>
+</html>
